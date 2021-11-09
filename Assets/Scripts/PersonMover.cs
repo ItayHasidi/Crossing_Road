@@ -11,13 +11,6 @@ public class PersonMover : MonoBehaviour
     [SerializeField] string triggeringTag;
 
     [SerializeField] GameObject background;
-
-    private void OnTriggerEnter2D(Collider2D other) {
-        if (other.tag == triggeringTag && enabled) {
-            // movePerson(this.direction);
-        }
-    }
-    // Update is called once per frame
     void Update()
     {
         movePerson(this.direction);
